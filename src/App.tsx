@@ -85,7 +85,7 @@ const HomePage: React.FC = () => {
                 </div>
                 <div style={{ marginTop: '1vh', fontSize: '2vw' }}>Welcome to my website</div>
             </Content>
-            <Footer style={footerStyle}>这里需要有一些超链接</Footer>
+            <Footer style={footerStyle}>这里需要有一些超链接!</Footer>
         </Layout>
 
     )

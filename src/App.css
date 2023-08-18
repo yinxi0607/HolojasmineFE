@@ -20,3 +20,37 @@
 /*.button:hover {*/
 /*  background-color: #aaa;*/
 /*}*/
+
+@font-face {
+    font-family: SpaceGroteskVariableFontWight;
+    src: url("/src/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+@font-face {
+    font-family: SpaceMonoBold;
+    src: url("/src/assets/fonts/SpaceMono-Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: SpaceMonoBolditalic;
+    src: url("/src/assets/fonts/SpaceMono-BoldItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: SpaceMonoItalic;
+    src: url("/src/assets/fonts/SpaceMono-Italic.ttf") format("truetype");
+}
+@font-face {
+    font-family: SpaceMonoRegular;
+    src: url("/src/assets/fonts/SpaceMono-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: GroteskRemixMonoSpaceMedium;
+    src: url("/src/assets/fonts/GroteskRemixMonospace-medium(1).otf") format("truetype");
+}
+
+@font-face {
+    font-family: SourceHanMonoBold;
+    src: url("/src/assets/fonts/SourceHanMonoSC-Bold.otf") format("truetype");
+}
+@font-face {
+    font-family: SourceHanMonoRegular;
+    src: url("/src/assets/fonts/SourceHanMonoSC-Regular.otf") format("truetype");
+}

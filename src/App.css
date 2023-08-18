@@ -34,6 +34,7 @@
 }
 .Email.hovered {
     color: rgb(255,07,255); /* 鼠标悬停时的颜色 */
+    cursor: pointer;
 }
 
 .City {

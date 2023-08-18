@@ -69,7 +69,7 @@ const HomePage: React.FC = () => {
     return (
         <Layout>
             <Header style={headerStyle}>
-                <a href="https://www.instagram.com/your_instagram_account" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/hologramjasmine" target="_blank" rel="noopener noreferrer">
                     <InstagramOutlined style={{position: 'absolute',top: '1.5vh',right: '2.5vw',}}/>
                 </a>
             </Header>
@@ -98,7 +98,7 @@ const HomePage: React.FC = () => {
                     info@holojasmine.com
                 </div>
                 <div className="City">
-                    BEIJING / SHANGHAI / HONGKONG / TAIBEI / JAKARTA / TOKYO / BANGKOK  / SEOUL
+                    BEIJING / SHANGHAI / HONGKONG / TAIPEI / JAKARTA / TOKYO / BANGKOK  / SEOUL
                 </div>
             </Footer>
         </Layout>

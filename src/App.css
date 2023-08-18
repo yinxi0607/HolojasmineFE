@@ -7,6 +7,42 @@
 /*  transform: translate(-50%, -50%);*/
 /*}*/
 
+.CenterEnglish {
+    font-size: 36pt;
+    font-family: SpaceMonoBold, Arial, sans-serif;
+    width: 50vw;
+}
+
+.CenterChinese {
+    margin-top: 2vh;
+    font-size: 45pt;
+    font-family: SourceHanMonoHeavy, Arial, sans-serif;
+    width: 50vw
+}
+
+.ComeWithUs {
+    margin-top: -8vh;
+    font-size: 28pt;
+    font-family: SpaceMonoBold, Arial, sans-serif
+}
+
+.Email {
+    margin-top: 1vh;
+    font-size: 20pt;
+    font-family: SpaceMonoBold, Arial, sans-serif;
+    transition: color 0.3s;
+}
+.Email.hovered {
+    color: rgb(255,07,255); /* 鼠标悬停时的颜色 */
+}
+
+.City {
+    margin-top: 8vh;
+    font-size: 20pt;
+    /*margin-bottom: -8vh;*/
+    font-family: SpaceMonoBold, Arial, sans-serif
+}
+
 /*.button {*/
 /*  !*position: absolute;*!*/
 /*  top: 20px;*/
@@ -25,22 +61,27 @@
     font-family: SpaceGroteskVariableFontWight;
     src: url("/src/assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
 }
+
 @font-face {
     font-family: SpaceMonoBold;
     src: url("/src/assets/fonts/SpaceMono-Bold.ttf") format("truetype");
 }
+
 @font-face {
     font-family: SpaceMonoBolditalic;
     src: url("/src/assets/fonts/SpaceMono-BoldItalic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: SpaceMonoItalic;
     src: url("/src/assets/fonts/SpaceMono-Italic.ttf") format("truetype");
 }
+
 @font-face {
     font-family: SpaceMonoRegular;
     src: url("/src/assets/fonts/SpaceMono-Regular.ttf") format("truetype");
 }
+
 @font-face {
     font-family: GroteskRemixMonoSpaceMedium;
     src: url("/src/assets/fonts/GroteskRemixMonospace-medium(1).otf") format("truetype");
@@ -50,7 +91,13 @@
     font-family: SourceHanMonoBold;
     src: url("/src/assets/fonts/SourceHanMonoSC-Bold.otf") format("truetype");
 }
+
 @font-face {
     font-family: SourceHanMonoRegular;
     src: url("/src/assets/fonts/SourceHanMonoSC-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: SourceHanMonoHeavy;
+    src: url("/src/assets/fonts/SourceHanMonoSC-Heavy.otf") format("truetype");
 }

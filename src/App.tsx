@@ -17,7 +17,7 @@ const headerStyle: React.CSSProperties = {
 const footerStyle: React.CSSProperties = {
     textAlign: 'center',
     backgroundColor: 'white',
-    height: "15vh",
+    height: "12vh",
     // fontSize: "2vw",
 };
 
@@ -50,6 +50,22 @@ const containerStyle: React.CSSProperties = {
 // };
 
 const HomePage: React.FC = () => {
+    const handleEmailClick = () => {
+        const email = 'info@holojasmine.com';
+        const subject = 'Hello';
+        const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}`;
+        window.open(mailtoLink);
+    };
+    const [isHovered, setIsHovered] = React.useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
     return (
         <Layout>
             <Header style={headerStyle}>
@@ -59,29 +75,29 @@ const HomePage: React.FC = () => {
             </Header>
             <Content style={contentStyle}>
                 <div style={containerStyle}>
-                    <div style={{
-                        fontSize: "2vw", fontFamily: "SpaceMonoBold",width:"50vw"
-                    }}>
+                    <div className="CenterEnglish">
                         FROM NO THINGS COMES A GREAT MULTITUDE
 
                     </div>
-                    <div style={{
-                        marginTop: '2vh', fontSize: '2vw', fontFamily: "SourceHanMonoBold",width:"50vw"
-                        // letterSpacing: '5vh'
-                    }}>
+                    <div className="CenterChinese">
                         ⽆中⽣有 万物盈天
                     </div>
                 </div>
 
             </Content>
             <Footer style={footerStyle}>
-                <div style={{marginTop:"-15vh", fontSize:"2.2vw",fontFamily:"SourceHanMonoRegular"}}>
+                <div className="ComeWithUs">
                     COME WITH US
                 </div>
-                <div style={{marginTop:"1vh", fontSize:"1vw",fontFamily:"SpaceMonoBold"}}>
+                <div
+                    className={`Email ${isHovered ? 'hovered' : ''}`}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
+                    onClick={handleEmailClick}
+                >
                     info@holojasmine.com
                 </div>
-                <div style={{marginTop:"10vh", fontSize:"1vw",marginBottom:"-10vh",fontFamily:"SourceHanMonoBold"}}>
+                <div className="City">
                     BEIJING / SHANGHAI / HONGKONG / TAIBEI / JAKARTA / TOKYO / BANGKOK  / SEOUL
                 </div>
             </Footer>
